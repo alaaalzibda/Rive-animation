@@ -23,6 +23,7 @@ class _RocketShipState extends State<RocketShip> {
     if (controller != null) {
       artboard!.addController(controller);
       triggerInput = controller.findInput<bool>("Trigger 1") as SMITrigger;
+      triggerInput!.fire();
     } else {
       print('controller not found');
     }
